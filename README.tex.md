@@ -5,10 +5,11 @@ The squared buoyancy frequency is defined as $N^2 \sim -\frac{g}{\rho} \frac{\De
 
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
-$N^2$ can also be calculated by hand using the GSW functions<br> 
-$\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$ and <br>
-$\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$<br>
-where $\mathtt{p\_mid}$ is the average pressure between two depths and the different references pressures $\mathtt{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
+$N^2$ can also be calculated by hand via<br> 
+$$
+\frac{g}{\rho} \frac{\Delta \rho^\Theta}{\Delta z} = \frac{g}{\rho} \left( \frac{\rho_\text{upper}^\Theta - \rho_\text{lower}^\Theta}{z_\text{upper} - z_\text{lower}}$
+$$
+where $\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$, $\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$, $\mathtt{p\_mid}$ is the average pressure between two depths and the different references pressures $\mathtt{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
 
 You can find the code for obtaining $N^2$ via both methods in [n2_confusion.Rmd](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
 ```
