@@ -6,7 +6,9 @@ The squared buoyancy frequency is defined as <img src="/tex/bd2177a908f1cd4fc2ab
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
 In addition, <img src="/tex/4c87ee198ded31321f89b44a38a0ad5a.svg?invert_in_darkmode&sanitize=true" align=middle width=21.552516149999988pt height=26.76175259999998pt/> may be calculated via 
+
 <p align="center"><img src="/tex/d191577bdeb31394cc4b12f6f5810c5e.svg?invert_in_darkmode&sanitize=true" align=middle width=391.545297pt height=49.315569599999996pt/></p>
+
 with acceleration due to gravity <img src="/tex/3837aa6790d0fb5d4900959681b34870.svg?invert_in_darkmode&sanitize=true" align=middle width=194.43821099999997pt height=24.65753399999998pt/>, in-situ density <img src="/tex/f7b53f7a8041065d1f876bdd3584ec77.svg?invert_in_darkmode&sanitize=true" align=middle width=225.05125005pt height=24.65753399999998pt/> at the average pressure <img src="/tex/28a78c928293e22b756ad6fc97c364e1.svg?invert_in_darkmode&sanitize=true" align=middle width=42.44760959999999pt height=22.831056599999986pt/> between two depths and potential density <img src="/tex/58c06b3bcb35c970934aadb9db4e3a50.svg?invert_in_darkmode&sanitize=true" align=middle width=218.32749179999993pt height=27.6567522pt/> referenced to different pressures <img src="/tex/88d215c9b972260f232c12b135f5276c.svg?invert_in_darkmode&sanitize=true" align=middle width=237.47058059999998pt height=24.65753399999998pt/> dbar.
 
 You can find the code for obtaining <img src="/tex/4c87ee198ded31321f89b44a38a0ad5a.svg?invert_in_darkmode&sanitize=true" align=middle width=21.552516149999988pt height=26.76175259999998pt/> via both methods in [n2_confusion.Rmd](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
