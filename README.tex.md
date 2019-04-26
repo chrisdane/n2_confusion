@@ -6,15 +6,15 @@ The squared buoyancy frequency is defined as $N^2 \sim -\frac{g}{\rho} \frac{\De
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
 Below, the differences between this default calculation of $N^2$ and calculations by hand via<br> 
-$\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$<br>
-$\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$,<br>
+   $\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$ and <br>
+   $\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$<br>
 where $\mathtt{p\_mid}$ is the average pressure between two depths and the different references pressures $\mathtt{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
 
 You can find the code for obtaining $N^2$ in [`n2_confusion.Rmd`](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
 ```
 $ git clone https://github.com/chrisdane/n2_confusion.git
 ```
-you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.hrml](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
+you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
 
 <br>
 <img align="left" width="2000" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
