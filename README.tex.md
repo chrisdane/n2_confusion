@@ -10,7 +10,7 @@ $\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$<br>
 $\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$,<br>
 where $\mathtt{p\_mid}$ is the average pressure between two depths and the different references pressures $\mathtt{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
 
-You can find the code in [`n2_confusion.Rmd`](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With `$ git clone https://github.com/chrisdane/n2_confusion.git` you can reproduce the `html` version of the script.
+You can find the code in [`n2_confusion.Rmd`](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With `$ git clone https://github.com/chrisdane/n2_confusion.git` you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.hrml](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
 
 <br>
 <img align="left" width="2000" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
