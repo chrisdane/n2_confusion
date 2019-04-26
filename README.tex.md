@@ -18,7 +18,7 @@ you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confu
 
 # Results
 
-The plot shows absolute values of $N^2$ (left), differences between the default method (GSW) and using different reference pressures $\mathtt{p\_ref}$ ($\mathtt{p\_ref}$ minus GSW; middle) and these differences as % of the default GSW method.
+The plot shows absolute values of $N^2$ (left), differences between the default method (GSW) and using different reference pressures $\mathtt{p\_ref}$ ($\mathtt{p\_ref}$ minus GSW; middle) and these differences as % of the default GSW method (right).
 
 The underlying data is the World Ocean Atlas 2018 climatology (1955-2017) at the $20.125^{\circ}$ West and $47.375^{\circ}$ North gridbox ([Locarnini et al. 2018 and Zweng et al. 2018](https://www.nodc.noaa.gov/OC5/woa18/)).
 
