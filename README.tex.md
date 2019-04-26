@@ -15,7 +15,7 @@ You can find the code for obtaining $N^2$ via both methods in [n2_confusion.Rmd]
 ```
 git clone https://github.com/chrisdane/n2_confusion.git
 ```
-you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
+you can reproduce and watch the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
 
 # Results
 
