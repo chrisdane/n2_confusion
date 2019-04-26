@@ -1,8 +1,3 @@
-# ignore everythin
-*
-
-# except
-!.gitignore
-!README.tex.md
-!n2_confusion.Rmd
-!_bookdown_files/bookdown_files/figure-html/n2_plot-1.png
+# ignore
+n2_confusion.r
+n2_confusion_woa18.png

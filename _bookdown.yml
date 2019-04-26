@@ -1,0 +1,16 @@
+book_filename: bookdown
+repo: https://github.com/rstudio/bookdown/
+output_dir: _book
+clean: [packages.bib, bookdown.bbl]
+delete_merged_file: true
+language:
+  label:
+    fig: "Fig. "
+    tab: "Tab. "
+  ui:
+    edit: "Edit"
+    chapter_name: "Chapter "
+rmd_files:
+  html: ["n2_confusion.Rmd"]
+  latex: ["n2_confusion.Rmd"]
+
