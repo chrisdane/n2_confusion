@@ -12,7 +12,7 @@ where $\mathtt{p\_mid}$ is the average pressure between two depths and the diffe
 
 You can find the code for obtaining $N^2$ via both methods in [n2_confusion.Rmd](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
 ```
-\$ git clone https://github.com/chrisdane/n2_confusion.git
+git clone https://github.com/chrisdane/n2_confusion.git
 ```
 you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
 
