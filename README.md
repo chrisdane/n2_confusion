@@ -10,7 +10,7 @@ Below, the differences between this default calculation of <img src="/tex/4c87ee
 <img src="/tex/0730cb95f7253f610e13686db8847038.svg?invert_in_darkmode&sanitize=true" align=middle width=201.38358899999997pt height=27.6567522pt/>,<br>
 where <img src="/tex/7ed3103a1e05c3ecd552a24db69222e2.svg?invert_in_darkmode&sanitize=true" align=middle width=40.43809109999999pt height=20.09134050000002pt/> is the average pressure between two depths and the different references pressures <img src="/tex/94500c9bc37dbd222043219a34cb0175.svg?invert_in_darkmode&sanitize=true" align=middle width=244.0912221pt height=24.65753399999998pt/> dbar.
 
-You can find the code in [`n2_confusion.Rmd`](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With `$ git clone https://github.com/chrisdane/n2_confusion.git` you can reproduce the `html` version of the script.
+You can find the code in [`n2_confusion.Rmd`](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With `$ git clone https://github.com/chrisdane/n2_confusion.git` you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.hrml](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
 
 <br>
 <img align="left" width="2000" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
