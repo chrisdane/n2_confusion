@@ -12,7 +12,15 @@ where <img src="/tex/7ed3103a1e05c3ecd552a24db69222e2.svg?invert_in_darkmode&san
 
 You can find the code for obtaining <img src="/tex/4c87ee198ded31321f89b44a38a0ad5a.svg?invert_in_darkmode&sanitize=true" align=middle width=21.552516149999988pt height=26.76175259999998pt/> via both methods in [n2_confusion.Rmd](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
 ```
-<img src="/tex/3e245e65bd04a8373098644a79ae4254.svg?invert_in_darkmode&sanitize=true" align=middle width=970.66440075pt height=124.74886710000001pt/>N^2<img src="/tex/05f26fc129d9118e998434f347cbad8e.svg?invert_in_darkmode&sanitize=true" align=middle width=785.1132580499999pt height=24.65753399999998pt/>mathtt{p\_ref}<img src="/tex/c69c3d333d775aae8e70e0abca422bb5.svg?invert_in_darkmode&sanitize=true" align=middle width=6.39271709999999pt height=24.65753399999998pt/>mathtt{p\_ref}<img src="/tex/ad9a960e78ba413dd0147aaba37a61e4.svg?invert_in_darkmode&sanitize=true" align=middle width=581.5541489999999pt height=47.671232400000015pt/>20.125^{\circ}<img src="/tex/79ade84ef224421644caba03f4edf56c.svg?invert_in_darkmode&sanitize=true" align=middle width=66.21596684999999pt height=22.831056599999986pt/>47.375^{\circ} North gridbox of Locarnini et al. 2018 and Zweng et al. 2018 ([link](https://www.nodc.noaa.gov/OC5/woa18/)).
+git clone https://github.com/chrisdane/n2_confusion.git
+```
+you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
+
+# Results
+
+The plot shows squared buoyancy frequency <img src="/tex/4c87ee198ded31321f89b44a38a0ad5a.svg?invert_in_darkmode&sanitize=true" align=middle width=21.552516149999988pt height=26.76175259999998pt/> absolute values (left), differences between the default method (`GSW`) and using different reference pressures <img src="/tex/fc768881d80481de1205a5c1e2d84ad3.svg?invert_in_darkmode&sanitize=true" align=middle width=40.43809109999999pt height=20.09134050000002pt/> (<img src="/tex/fc768881d80481de1205a5c1e2d84ad3.svg?invert_in_darkmode&sanitize=true" align=middle width=40.43809109999999pt height=20.09134050000002pt/> minus `GSW`; middle) and these differences as % of the default `GSW` method.
+
+The underlying data is the climatology (1955-2017) of World Ocean Atlas 2018 at <img src="/tex/000ab2c0010ce8b67672421f43f5c84b.svg?invert_in_darkmode&sanitize=true" align=middle width=52.39746599999998pt height=22.63850490000001pt/> West and $47.375^{\circ} North gridbox of Locarnini et al. 2018 and Zweng et al. 2018 ([link](https://www.nodc.noaa.gov/OC5/woa18/)).
 
 <br>
 <img align="left" width="2000" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
