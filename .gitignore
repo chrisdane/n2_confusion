@@ -4,5 +4,6 @@
 # except
 !.gitignore
 !README.md
+!README.tex.md
 !n2_confusion.Rmd
 !_bookdown_files/bookdown_files/figure-html/n2_plot-1.png
