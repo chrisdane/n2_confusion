@@ -5,7 +5,7 @@ The squared buoyancy frequency is defined as $N^2 \sim -\frac{g}{\rho} \frac{\De
 
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
-$N^2$ can also be calculated by hand via<br> 
+$N^2$ can also be calculated by hand using the GSW functions<br> 
 $\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$ and <br>
 $\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$<br>
 where $\mathtt{p\_mid}$ is the average pressure between two depths and the different references pressures $\mathtt{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
