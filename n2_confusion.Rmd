@@ -80,7 +80,7 @@ rho_insitu_at_pmid <- gsw_rho(SA=sa_at_p_mid, CT=ct_at_p_mid, p=p_mid_own)
 dz <- abs(z[1:(length(z)-1)] - z[2:length(z)])
 
 for (pp in 1:length(ps)) {
-    message("calc own N2 with ref pressure ", ps[pp], " dbar ...")
+    message("calc N2 with ref pressure ", ps[pp], " dbar ...")
     rho_pot <- gsw_rho(SA=sa, CT=ct, p=ps[pp])
     # upper minus lower
     drho_pot <- rho_pot[1:(length(rho_pot)-1)] - rho_pot[2:length(rho_pot)]
@@ -115,7 +115,7 @@ xlim <- range(N2_anom, na.rm=T) # s-2
 ylim <- rev(range(p)) # dbar
 plot(N2_anom[,1], N2_gsw$p_mid, 
      xlim=xlim, ylim=ylim, t="n",
-     xlab="N2 anomaly [s-2]\n=(own minus GSW)", ylab="pressure [dbar]",
+     xlab="N2 anomaly [s-2]\n=(p_ref minus GSW)", ylab="pressure [dbar]",
      yaxt="n")
 axis(2, las=2)
 for (pp in 1:length(ps)) {
@@ -128,7 +128,7 @@ xlim <- range(N2_anom_percent, na.rm=T) # %
 ylim <- rev(range(p)) # dbar
 plot(N2_anom_percent[,1], N2_gsw$p_mid, 
      xlim=xlim, ylim=ylim, t="n",
-     xlab="N2 anomaly [% of GSW]\n=(own minus GSW)/GSW*100", ylab="pressure [dbar]",
+     xlab="N2 anomaly [% of GSW]\n=(p_ref minus GSW)/GSW*100", ylab="pressure [dbar]",
      yaxt="n")
 axis(2, las=2)
 for (pp in 1:length(ps)) {

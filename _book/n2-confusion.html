@@ -222,17 +222,17 @@ rho_insitu_at_pmid &lt;-<span class="st"> </span><span class="kw">gsw_rho</span>
 dz &lt;-<span class="st"> </span><span class="kw">abs</span>(z[<span class="dv">1</span><span class="op">:</span>(<span class="kw">length</span>(z)<span class="op">-</span><span class="dv">1</span>)] <span class="op">-</span><span class="st"> </span>z[<span class="dv">2</span><span class="op">:</span><span class="kw">length</span>(z)])
 
 <span class="cf">for</span> (pp <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(ps)) {
-    <span class="kw">message</span>(<span class="st">&quot;calc own N2 with ref pressure &quot;</span>, ps[pp], <span class="st">&quot; dbar ...&quot;</span>)
+    <span class="kw">message</span>(<span class="st">&quot;calc N2 with ref pressure &quot;</span>, ps[pp], <span class="st">&quot; dbar ...&quot;</span>)
     rho_pot &lt;-<span class="st"> </span><span class="kw">gsw_rho</span>(<span class="dt">SA=</span>sa, <span class="dt">CT=</span>ct, <span class="dt">p=</span>ps[pp])
     <span class="co"># upper minus lower</span>
     drho_pot &lt;-<span class="st"> </span>rho_pot[<span class="dv">1</span><span class="op">:</span>(<span class="kw">length</span>(rho_pot)<span class="op">-</span><span class="dv">1</span>)] <span class="op">-</span><span class="st"> </span>rho_pot[<span class="dv">2</span><span class="op">:</span><span class="kw">length</span>(rho_pot)]
     N2_own[,pp] &lt;-<span class="st"> </span><span class="op">-</span>g<span class="op">/</span>rho_insitu_at_pmid <span class="op">*</span><span class="st"> </span>drho_pot<span class="op">/</span>dz
 }
-## calc own N2 with ref pressure 0 dbar ...
-## calc own N2 with ref pressure 1000 dbar ...
-## calc own N2 with ref pressure 2000 dbar ...
-## calc own N2 with ref pressure 3000 dbar ...
-## calc own N2 with ref pressure 4000 dbar ...</code></pre>
+## calc N2 with ref pressure 0 dbar ...
+## calc N2 with ref pressure 1000 dbar ...
+## calc N2 with ref pressure 2000 dbar ...
+## calc N2 with ref pressure 3000 dbar ...
+## calc N2 with ref pressure 4000 dbar ...</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># plot</span>
 <span class="co">#png(paste0(&quot;n2_confusion_&quot;, dataname, &quot;.png&quot;), width=3000, height=2000, res=400)</span>
 <span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">3</span>))
@@ -259,7 +259,7 @@ xlim &lt;-<span class="st"> </span><span class="kw">range</span>(N2_anom, <span 
 ylim &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">range</span>(p)) <span class="co"># dbar</span>
 <span class="kw">plot</span>(N2_anom[,<span class="dv">1</span>], N2_gsw<span class="op">$</span>p_mid, 
      <span class="dt">xlim=</span>xlim, <span class="dt">ylim=</span>ylim, <span class="dt">t=</span><span class="st">&quot;n&quot;</span>,
-     <span class="dt">xlab=</span><span class="st">&quot;N2 anomaly [s-2]</span><span class="ch">\n</span><span class="st">=(own minus GSW)&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;pressure [dbar]&quot;</span>,
+     <span class="dt">xlab=</span><span class="st">&quot;N2 anomaly [s-2]</span><span class="ch">\n</span><span class="st">=(p_ref minus GSW)&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;pressure [dbar]&quot;</span>,
      <span class="dt">yaxt=</span><span class="st">&quot;n&quot;</span>)
 <span class="kw">axis</span>(<span class="dv">2</span>, <span class="dt">las=</span><span class="dv">2</span>)
 <span class="cf">for</span> (pp <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(ps)) {
@@ -272,7 +272,7 @@ xlim &lt;-<span class="st"> </span><span class="kw">range</span>(N2_anom_percent
 ylim &lt;-<span class="st"> </span><span class="kw">rev</span>(<span class="kw">range</span>(p)) <span class="co"># dbar</span>
 <span class="kw">plot</span>(N2_anom_percent[,<span class="dv">1</span>], N2_gsw<span class="op">$</span>p_mid, 
      <span class="dt">xlim=</span>xlim, <span class="dt">ylim=</span>ylim, <span class="dt">t=</span><span class="st">&quot;n&quot;</span>,
-     <span class="dt">xlab=</span><span class="st">&quot;N2 anomaly [% of GSW]</span><span class="ch">\n</span><span class="st">=(own minus GSW)/GSW*100&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;pressure [dbar]&quot;</span>,
+     <span class="dt">xlab=</span><span class="st">&quot;N2 anomaly [% of GSW]</span><span class="ch">\n</span><span class="st">=(p_ref minus GSW)/GSW*100&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;pressure [dbar]&quot;</span>,
      <span class="dt">yaxt=</span><span class="st">&quot;n&quot;</span>)
 <span class="kw">axis</span>(<span class="dv">2</span>, <span class="dt">las=</span><span class="dv">2</span>)
 <span class="cf">for</span> (pp <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(ps)) {
