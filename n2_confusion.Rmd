@@ -38,6 +38,8 @@ if (F) {
                           which.min(abs(lats - select_from_lon_lat["lat"])))
     lon <- lons[select_from_inds[1]]
     lat <- lats[select_from_inds[2]]
+    message("lon: ", lon)
+    message("lat: ", lat)
     p <- gsw_p_from_z(z=-z, latitude=lat) # dbar
     sp <- ncvar_get(sp_woa_ncin, "s_an", 
                     start=c(select_from_inds[1], select_from_inds[2], 1, 1),

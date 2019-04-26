@@ -176,6 +176,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
                           <span class="kw">which.min</span>(<span class="kw">abs</span>(lats <span class="op">-</span><span class="st"> </span>select_from_lon_lat[<span class="st">&quot;lat&quot;</span>])))
     lon &lt;-<span class="st"> </span>lons[select_from_inds[<span class="dv">1</span>]]
     lat &lt;-<span class="st"> </span>lats[select_from_inds[<span class="dv">2</span>]]
+    <span class="kw">message</span>(<span class="st">&quot;lon: &quot;</span>, lon)
+    <span class="kw">message</span>(<span class="st">&quot;lat: &quot;</span>, lat)
     p &lt;-<span class="st"> </span><span class="kw">gsw_p_from_z</span>(<span class="dt">z=</span><span class="op">-</span>z, <span class="dt">latitude=</span>lat) <span class="co"># dbar</span>
     sp &lt;-<span class="st"> </span><span class="kw">ncvar_get</span>(sp_woa_ncin, <span class="st">&quot;s_an&quot;</span>, 
                     <span class="dt">start=</span><span class="kw">c</span>(select_from_inds[<span class="dv">1</span>], select_from_inds[<span class="dv">2</span>], <span class="dv">1</span>, <span class="dv">1</span>),
@@ -192,6 +194,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         t_insitu &lt;-<span class="st"> </span>t_insitu[<span class="op">-</span>inds]
     }
 }
+## lon: -20.125
+## lat: 47.375
 
 sa &lt;-<span class="st"> </span><span class="kw">gsw_SA_from_SP</span>(<span class="dt">SP=</span>sp, <span class="dt">p=</span>p, <span class="dt">long=</span>lon, <span class="dt">lat=</span>lat)
 ct &lt;-<span class="st"> </span><span class="kw">gsw_CT_from_t</span>(<span class="dt">SA=</span>sa, <span class="dt">t=</span>t_insitu, <span class="dt">p=</span>p)
