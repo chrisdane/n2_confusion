@@ -6,7 +6,9 @@ The squared buoyancy frequency is defined as $N^2 \sim -\frac{g}{\rho} \frac{\De
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
 In addition, $N^2$ may be calculated via 
+
 $$ -\frac{g}{\rho_\text{p\_mid}} \frac{\Delta \rho_\text{p\_ref}^\Theta}{\Delta z} = -\frac{g}{\rho_\text{p\_mid}} \left( \frac{\rho_\text{p\_ref,upper}^\Theta - \rho_\text{p\_ref,lower}^\Theta}{z_\text{upper} - z_\text{lower}} \right) $$
+
 with acceleration due to gravity $g = \mathtt{gsw\_grav(latitude, p)}$, in-situ density $\rho_\text{p\_mid} = \mathtt{gsw\_rho(SA, CT, p\_mid)}$ at the average pressure $\text{p\_mid}$ between two depths and potential density $\rho_\text{p\_ref}^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$ referenced to different pressures $\text{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
 
 You can find the code for obtaining $N^2$ via both methods in [n2_confusion.Rmd](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
