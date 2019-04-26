@@ -18,10 +18,9 @@ you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confu
 
 # Results
 
-The plot shows squared buoyancy frequency $N^2$ absolute values (left), differences between the default method (`GSW`) and using different reference pressures $\mathtt{p\_ref}$ ($\mathtt{p\_ref}$ minus `GSW`; middle) and these differences as % of the default `GSW` method.
+The plot shows absolute values of $N^2$ (left), differences between the default method (GSW) and using different reference pressures $\mathtt{p\_ref}$ ($\mathtt{p\_ref}$ minus GSW; middle) and these differences as % of the default GSW method.
 
-The underlying data is the climatology (1955-2017) of World Ocean Atlas 2018 at $20.125^{\circ}$ West and $47.375^{\circ} North gridbox of Locarnini et al. 2018 and Zweng et al. 2018 ([link](https://www.nodc.noaa.gov/OC5/woa18/)).
+The underlying data is the World Ocean Atlas 2018 climatology (1955-2017) at the $20.125^{\circ}$ West and $47.375^{\circ}$ North gridbox ([Locarnini et al. 2018 and Zweng et al. 2018](https://www.nodc.noaa.gov/OC5/woa18/)).
 
-<br>
-<img align="left" width="2000" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
+<img align="left" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
 
