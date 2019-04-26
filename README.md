@@ -15,7 +15,7 @@ You can find the code for obtaining <img src="/tex/4c87ee198ded31321f89b44a38a0a
 ```
 git clone https://github.com/chrisdane/n2_confusion.git
 ```
-you can reproduce the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
+you can reproduce and watch the `html` version of the script ([n2_confusion/_book/n2-confusion.html](https://github.com/chrisdane/n2_confusion/blob/master/_book/n2-confusion.html)).
 
 # Results
 
