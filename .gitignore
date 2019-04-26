@@ -1,0 +1,7 @@
+# ignore everythin
+*
+
+# except
+!.gitignore
+!README.md
+!_book/n2-confusion.html
