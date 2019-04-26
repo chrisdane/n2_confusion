@@ -5,12 +5,12 @@ The squared buoyancy frequency is defined as $N^2 \sim -\frac{g}{\rho} \frac{\De
 
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
-In contrast, $N^2$ may be alculated by hand via<br> 
+$N^2$ can also be calculated by hand via<br> 
 $\rho = \mathtt{gsw\_rho(SA, CT, p\_mid)}$ and <br>
 $\rho^\Theta = \mathtt{gsw\_rho(SA, CT, p\_ref)}$<br>
 where $\mathtt{p\_mid}$ is the average pressure between two depths and the different references pressures $\mathtt{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
 
-You can find the code for obtaining $N^2$ via both methods in [`n2_confusion.Rmd`](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
+You can find the code for obtaining $N^2$ via both methods in [n2_confusion.Rmd](https://github.com/chrisdane/n2_confusion/blob/master/n2_confusion.Rmd). With
 ```
 $ git clone https://github.com/chrisdane/n2_confusion.git
 ```
@@ -22,5 +22,6 @@ The plot shows squared buoyancy frequency $N^2$ absolute values (left), differen
 
 The underlying data is the climatology (1955-2017) of World Ocean Atlas 2018 at $20.125^{\circ}$ West and $47.375^{\circ} North gridbox of Locarnini et al. 2018 and Zweng et al. 2018 ([link](https://www.nodc.noaa.gov/OC5/woa18/)).
 
+<br>
 <img align="left" width="2000" src="_bookdown_files/bookdown_files/figure-html/n2_plot-1.png">
 
