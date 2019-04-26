@@ -5,9 +5,9 @@ The squared buoyancy frequency is defined as $N^2 \sim -\frac{g}{\rho} \frac{\De
 
 In the `gsw` package, this is implemented via the [`gsw_Nsquared(SA,CT,p,{lat})`](http://www.teos-10.org/pubs/gsw/html/gsw_Nsquared.html) function. Here, the argument `p` represents the absolute pressure in dbar.
 
-In addition, $N^2$ can be calculated by hand via<br> 
+In addition, $N^2$ may be calculated by hand via 
 $$
--\frac{g}{\rho_\text{p\_mid}} \frac{\Delta \rho_\text{p\_ref}^\Theta}{\Delta z} = -\frac{g}{\rho} \left( \frac{\rho_\text{p\_ref,upper}^\Theta - \rho_\text{p\_ref,lower}^\Theta}{z_\text{upper} - z_\text{lower}} \right)
+-\frac{g}{\rho_\text{p\_mid}} \frac{\Delta \rho_\text{p\_ref}^\Theta}{\Delta z} = -\frac{g}{\rho_\text{p\_mid}} \left( \frac{\rho_\text{p\_ref,upper}^\Theta - \rho_\text{p\_ref,lower}^\Theta}{z_\text{upper} - z_\text{lower}} \right)
 $$
 where $g = \mathtt{gsw\_grav(latitude, p)}$, $\rho_\text{p\_mid} = \mathtt{gsw\_rho(SA, CT, p\_mid)}$, $\rho^\Theta_\text{p\_ref} = \mathtt{gsw\_rho(SA, CT, p\_ref)}$, $\text{p\_mid}$ is the average pressure between two depths and the different references pressures $\text{p\_ref} = (0, 1000, 2000, 3000, 4000)$ dbar.
 
